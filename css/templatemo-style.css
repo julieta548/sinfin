@@ -779,14 +779,30 @@ footer {
 }
 
 #imagenServicios{
-  width: 690px;
+  width: 370px;
   height: 700px;
 }
 
 /* ---------------Responsive media queries---------------- */
 
-@media (max-width:320px){
-  
+@media screen and (max-width:320px) and (max-height: 598){
+
+  #imagenServicios{
+    width: 400px;
+    height: 500px;
+  }
+
+  .navbar-header{
+    width: 606px;
+  }
+}
+
+@media screen and (max-width:320px) and (max-height: 598){
+  #iframe{
+    width: 600px;
+    height: 800px;
+  }
+
 }
 
 @media (min-width:768px){
