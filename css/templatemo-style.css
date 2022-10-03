@@ -782,3 +782,21 @@ footer {
   width: 690px;
   height: 700px;
 }
+
+/* ---------------Responsive media queries---------------- */
+
+@media (max-width:320px){
+  
+}
+
+@media (min-width:768px){
+
+}
+
+@media (orientation: landscape) {
+  
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+}
