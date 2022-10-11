@@ -456,7 +456,7 @@ a:hover, a:active, a:focus {
 #experience .media .fa {
   font-size: 10px;
   margin-right: 8px;
-
+ 
 }
 
 #experience small {
@@ -661,8 +661,7 @@ footer {
    Mobile Responsive         
 -----------------------------------------*/
 
-@media only screen and (max-width: 320px) {
-
+@media only screen and (max-width: 580px) {
   h1 {
     font-size: 32px;
   }
@@ -676,6 +675,18 @@ footer {
     font-size: 22px;
     line-height: inherit;
   }
+}
+
+@media only screen and (max-width: 767px) {
+  .custom-navbar .navbar-brand {
+    line-height: 18px;
+  }
+
+  #home .home-thumb {
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
 
   #home .container,
   #about .container,
@@ -683,22 +694,32 @@ footer {
   #service .container,
   #education .container,
   #contact .container {
-    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  #about .col-md-3,
+  #experience .col-md-6,
+  #education .col-md-6,
+  #contact .col-md-3 {
     padding: 0;
     margin: 0;
   }
 
-  .home-img {
-    background-position:50% 50%; 
-    width: 245%;
-    height: 100vh;
+  .background-image {
+    position: relative;
+    min-height: 65vh;
   }
-
 }
 
-@media only screen and (max-width: 320px) {
- 
+@media only screen and (max-width: 1024px) {
+  .section-title {
+    padding-bottom: 12px;
+  }
 
+  footer {
+    padding: 40px 0;
+  }
 }
 
 #parrafo-about {
@@ -741,26 +762,83 @@ footer {
 }
 
 
-#bienvenidos {
-  font-size: x-large;
+#bienvenidos{
+ font-size: x-large;
 }
 
 
 
-#imagenCarousel {
+#imagenCarousel{
   width: 500px;
   height: 500px;
+ 
+}
+
+#acercaDe{
+  background-size: cover ;
+}
+
+#imagenServicios{
+  width: 370px;
+  height: 700px;
+}
+
+/* ---------------Responsive media queries---------------- */
+
+@media screen and (max-device-width:320px) and (max-device-height: 598){
+
+  #imagenServicios{
+    width: 400px;
+    height: 500px;
+  }
+
+  #barra{
+    width: 100%; 
+    padding: 16px;
+    text-align: left;
+  }
+  #home .home-img {
+    background: url('../images/Frente\ Hostel\ II.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 320px;
+    height: 100vh;
+  
+  }
+}
+
+@media screen and (max-device-width:320px) and (max-device-height: 598){
+  #iframe{
+    width: 600px;
+    height: 800px;
+  }
 
 }
 
-#acercaDe {
-  background-size: cover;
+@media (min-width:768px){
+
 }
 
-#imagenServicios {
-  width: 690px;
-  height: 662px;
+@media (orientation: landscape) {
+  
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+}
+/*---------------------------------------
+   Mobile Responsive         
+-----------------------------------------*/
+.barra {
+  width : 75vw ; 
+  max-width : 1000px;
+  min-width: 320px; 
+  margin: auto;  
 }
 
 
-/*------- Media queries -------*/
+
+
+
+
+
